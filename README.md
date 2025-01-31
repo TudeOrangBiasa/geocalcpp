@@ -70,17 +70,19 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 
 ## Struktur Direktori
 
-- : Berisi kode sumber aplikasi.
-- : Berisi header file.
-- : Folder untuk images yang digunakan aplikasi.
-- : Berisi kode fungsi aplikasi.
-- : Berisi array untuk mendaftarkan image yang berada di .
-- : Berisi kode untuk tampilan aplikasi.
-- : Berisi file ASCII art.
-- : Direktori untuk build output.
-- : File konfigurasi CMake.
-- : File ini.
-- : Berisi soal dan perencanaan project ini.
+
+- [src](http://_vscodecontentref_/0): Berisi kode sumber aplikasi.
+- [include](http://_vscodecontentref_/1): Berisi header file.
+- [assets](http://_vscodecontentref_/2): Folder untuk images yang digunakan aplikasi.
+- [modules](http://_vscodecontentref_/3): Berisi kode fungsi aplikasi.
+- [resources](http://_vscodecontentref_/4): Berisi array untuk mendaftarkan image yang berada di [assets](http://_vscodecontentref_/5).
+- [view](http://_vscodecontentref_/6): Berisi kode untuk tampilan aplikasi.
+- [ascii](http://_vscodecontentref_/7): Berisi file ASCII art.
+- [build](http://_vscodecontentref_/8): Direktori untuk build output.
+- [CMakeLists.txt](http://_vscodecontentref_/9): File konfigurasi CMake.
+- [README.md](http://_vscodecontentref_/10): File ini.
+- [ketentuan.txt](http://_vscodecontentref_/11): Berisi soal dan perencanaan project ini.
+
 
 ## Menampilkan Gambar
 
