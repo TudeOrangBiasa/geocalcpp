@@ -4,8 +4,8 @@ using namespace std;
 
 // Menampilkan gambar sesuai nama file
 void displaySelectedImage(const string& imageName) {
-    int width = 80;
-    int height = 40;
+    int width = 50;
+    int height = 20;
     displayImage(imageName, width, height);
 }
 
