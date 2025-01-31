@@ -1,0 +1,11 @@
+Soal[
+     "Buatlah program yang menampilkan daftar rumus bangun datar/ruang. User memilih
+      rumus, memasukkan variabel, dan program menghitung hasil. Gunakan fungsi, array,
+      perulangan, dan conditional statements. "
+    ];
+
+style = modular
+programming_lang = C++
+code_editor = codeOSS (VSCode open source version on arch)
+build = CMake (minimum requiredment 3.10)
+reference = composer looks for design + idea for structure code from AI (chatgpt 4o)
