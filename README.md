@@ -62,6 +62,10 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 ## Struktur Direktori
 - `src/`: Berisi kode sumber aplikasi.
 - `include/`: Berisi header file.
+- `assets`: Folder untuk images yang digunakan aplikasi
+- `src/modules`: Berisi kode fungsi aplikasi
+- `src/resources`: Berisi array untuk mendaftarkan image yang berada di `assets`
+- `src/view`: Berisi kode untuk tampilan aplikasi
 - `src/view/ascii/`: Berisi file ASCII art.
 - `build/`: Direktori untuk build output.
 - `CMakeLists.txt`: File konfigurasi CMake.
