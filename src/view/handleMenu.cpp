@@ -2,12 +2,19 @@
 
 using namespace std;
 
-// Menampilkan gambar sesuai nama file
+//## fungsi untuk custom ukuran aktifkan jika ingin mensetting ukuran gambar!
+//## note : pastikan ukuran gambar sama semua dan sesuai agar tidak ada gambar yang pecah/buram
+// void displaySelectedImage(const string& imageName) {
+//     int width = 80;
+//     int height = 20;
+//     displayImage(imageName, width, height);
+// }
+
+// default menampilkan gambar tanpa custom ukuran
 void displaySelectedImage(const string& imageName) {
-    int width = 50;
-    int height = 20;
-    displayImage(imageName, width, height);
+    displayImage(imageName);
 }
+
 
 // Menampilkan header dan gambar sesuai pilihan
 void displayHeaderAndImage(int pilihan, const char* images[], int maxPilihan){

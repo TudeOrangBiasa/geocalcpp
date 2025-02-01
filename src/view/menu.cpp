@@ -34,7 +34,7 @@ void mainMenu() {
 void menuBangunDatar() {
     headerMenu();
     cout << fgGreen() << bold() << "+==================================================+" << endl;
-    cout << "|" << fgBrightYellow() <<"                 Bangun Datar                    "<< fgGreen() << bold() << "|" << endl;
+    cout << "|" << fgBrightYellow() <<"                 Bangun Datar                     "<< fgGreen() << bold() << "|" << endl;
     cout << fgGreen() << bold() << "+==================================================+" << endl;
     cout << fgGreen();
     cout << "| 1. Persegi Panjang                               |" << endl;

@@ -46,6 +46,7 @@ void inputTrapesium(BangunDatar &bd) {
 void inputJajarGenjang(BangunDatar &bd) {
     validateInput("Masukkan alas: ", bd.input1);
     validateInput("Masukkan tinggi: ", bd.input2);
+    validateInput("Masukkan sisi miring: ", bd.input3);
 }
 
 void inputLayangLayang(BangunDatar &bd) {

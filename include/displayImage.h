@@ -7,7 +7,11 @@
 #include <unistd.h>
 #include <limits.h>
 
+// ##uncomment line ini jika ingin mengaktifkan gambar dengan custom ukuran
+// void displayImage(const std::string& fileName, int width, int height);
 
-void displayImage(const std::string& fileName, int width, int height);
+// ##default menampilkan gambar tanpa custom ukuran
+void displayImage(const std::string& fileName);
+
 
 #endif // DISPLAY_IMAGE_H

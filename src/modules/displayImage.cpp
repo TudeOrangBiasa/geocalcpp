@@ -2,7 +2,9 @@
 
 using namespace std;
 
-void displayImage(const string& fileName, int width, int height) {
+// ## ini adalah default dari parameter fungsi menampilkan gambar tanpa custom ukuran
+// ## tambahkan parameter width dan height jika ingin mensetting ukuran gambar contoh code bisa di liat pada file header displayImage.h
+void displayImage(const string& fileName) {
     // get directory sekarang
     char cwd[PATH_MAX];
     if (getcwd(cwd, sizeof(cwd)) == NULL) {
@@ -13,9 +15,15 @@ void displayImage(const string& fileName, int width, int height) {
     string filePath = basePath + fileName;
 
     #if defined(_WIN32) || defined(_WIN64)
-        string command = "w3mimgdisplay -geometry " + to_string(width) + "x" + to_string(height) + " " + filePath; // untuk windows pake w3m
+        // ## uncomment line code ini jika ingin mengaktifkan custom ukuran gambar 
+        // string command = "w3mimgdisplay -geometry " + to_string(width) + "x" + to_string(height) + " " + filePath;  untuk windows pake w3m
+        // ## default menampilkan gambar tanpa custom ukuran
+        string command = "w3mimgdisplay " + filePath; // untuk windows pake w3m 
     #elif defined(__APPLE__) || defined(__MACH__) || defined(__linux__)
-        string command = "chafa --size " + to_string(width) + "x" + to_string(height) + " " + filePath; // untuk mac dan linux pake chafa
+        // ## uncomment line code ini jika ingin mengaktifkan custom ukuran gambar
+        // string command = "chafa --stretch --size " + to_string(width) + "x" + to_string(height) + " " + filePath;  untuk mac dan linux pake chafa
+        // ## default menampilkan gambar tanpa custom ukuran
+        string command = "chafa " + filePath; // untuk mac dan linux pake chafa
     #else
         cerr << "Unsupported OS" << endl; // unsupported OS diluar dari 3 OS diatas
         return;

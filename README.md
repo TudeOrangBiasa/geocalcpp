@@ -8,7 +8,7 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 - Menghitung volume dan luas permukaan berbagai bangun ruang seperti kubus, balok, bola, dan lain-lain.
 - Tampilan menu interaktif dengan ASCII art.
 - Menggunakan modular programming untuk menjaga kode tetap rapi dan mudah dibaca.
-- Menampilkan gambar bangun datar dan bangun ruang di terminal menggunakan `chafa` (Linux dan macOS) atau `w3m` (Windows).
+- Menampilkan gambar bangun datar dan bangun ruang di terminal menggunakan `chafa` (Linux dan macOS), `w3m` (Windows) atau `chafa` dengan WSL (Windows).
 
 ## Minimum Requirement
 
@@ -17,6 +17,43 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 - Chafa / w3m
 - Terminal yang support ANSI colors
 - Sistem operasi Linux, macOS, atau Windows
+
+**Perhatikan! untuk memastikan bahwa sudah menginstall semua requirement**
+
+1. **Compiler C++:** Buka terminal Anda dan jalankan perintah berikut:
+
+```sh
+   g++ --version
+   ```
+
+2. **CMAKE** Jalankan perintah ini di terminal anda:
+
+```sh
+   cmake --version
+   ```
+
+3. **Chafa/W3m** Jalankan perintah ini di terminal anda:
+
+```sh
+   chafa --version
+   ```
+
+   atau
+
+```sh
+   w3m --version
+   ```
+
+4. **Support ANSI color** Jalankan perintah ini di terminal anda, pastikan teks ini berubah    warna menjadi merah
+
+```sh
+   printf "\e[31mThis text should be red.\e[0m\n"
+   ```
+
+**Pastikan versi dan semua requirement sudah terpenuhi**
+
+
+## Instalasi untuk support output gambar sesuai OS yang dipakai :
 
 ### Linux
 
@@ -33,9 +70,15 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 
 ### Windows
 
+- **Untuk Windows memiliki 2 opsi:**
+  1. Menggunakan WSL (Windows Subsystem for Linux) dengan menginstall `chafa`. Ini adalah opsi yang lebih sederhana karena Anda dapat menggunakan Terminal bawaan Windows (RECOMMENDED).
+  2. Menggunakan `Cygwin` Terminal untuk support menjalankan program ini. Jika menggunakan `Cygwin`, pastikan menginstall `w3m` supaya support untuk output gambar di terminal.
+- `Cygwin`: Unduh dan instal dari [situs resmi](https://www.cygwin.com/)
 - `w3m`: Unduh dan instal dari [situs resmi](http://w3m.sourceforge.net/).
+ **Note : Saya menyarankan menggunakan WSL dengan Menginstall chafa pada WSL karena lebih mudah digunakan dibanding `Cygwin`**
 
-## Petunjuk Penginstallan
+
+## Petunjuk Penginstallan Project Ini
 
 1. Clone repository ini atau download source code di repository ini, lalu jalankan perintah ini:
 
@@ -68,8 +111,8 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
     ./geocalcpp
     ```
 
-## Struktur Direktori
 
+## Struktur Direktori
 
 - [src](http://_vscodecontentref_/0): Berisi kode sumber aplikasi.
 - [include](http://_vscodecontentref_/1): Berisi header file.
@@ -86,7 +129,7 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 
 ## Menampilkan Gambar
 
-Program ini menggunakan fungsi `displayImage` untuk menampilkan gambar di terminal. Fungsi ini mendeteksi sistem operasi yang digunakan dan memilih pustaka yang sesuai (`chafa` untuk Linux dan macOS, `w3m` untuk Windows).
+Program ini menggunakan fungsi `displayImage` untuk menampilkan gambar di terminal. Fungsi ini mendeteksi sistem operasi yang digunakan dan memilih pustaka yang sesuai (`chafa` untuk Linux dan macOS, `w3m` untuk Windows atau `chafa` WSL untuk Windows).
 
 ## Kontribusi
 
