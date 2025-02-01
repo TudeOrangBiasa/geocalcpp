@@ -1,3 +1,0 @@
-/home/tude/codeDir/pemrogramanCPP/tugasAkhir/geocalcpp/build/CMakeFiles/geocalcpp.dir
-/home/tude/codeDir/pemrogramanCPP/tugasAkhir/geocalcpp/build/CMakeFiles/edit_cache.dir
-/home/tude/codeDir/pemrogramanCPP/tugasAkhir/geocalcpp/build/CMakeFiles/rebuild_cache.dir
