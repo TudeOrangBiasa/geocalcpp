@@ -75,7 +75,7 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
   2. Menggunakan `Cygwin` Terminal untuk support menjalankan program ini. Jika menggunakan `Cygwin`, pastikan menginstall `w3m` supaya support untuk output gambar di terminal.
 - `Cygwin`: Unduh dan instal dari [situs resmi](https://www.cygwin.com/)
 - `w3m`: Unduh dan instal dari [situs resmi](http://w3m.sourceforge.net/).
- **Note : Saya menyarankan menggunakan WSL dengan Menginstall chafa pada WSL karena lebih mudah digunakan dibanding `Cygwin`**
+ **Note : Saya menyarankan menggunakan WSL dengan Menginstall `chafa` pada WSL karena lebih mudah digunakan dibanding `Cygwin`**
 
 
 ## Petunjuk Penginstallan Project Ini
