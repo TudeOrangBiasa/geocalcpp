@@ -2,10 +2,7 @@
 
 using namespace std;
 
-// ## ini adalah default dari parameter fungsi menampilkan gambar tanpa custom ukuran
-// ## tambahkan parameter width dan height jika ingin mensetting ukuran gambar contoh code bisa di liat pada file header displayImage.h
 void displayImage(const string& fileName) {
-    // get directory sekarang
     char cwd[PATH_MAX];
     if (getcwd(cwd, sizeof(cwd)) == NULL) {
         cerr << "Error getting current working directory" << endl;
@@ -28,24 +25,22 @@ void displayImage(const string& fileName) {
         }
 
         if (isWSL) {
-            // Use chafa if running in WSL
-            string command = "chafa " + filePath;
+            // Use feh if running in WSL
+            string command = "feh -x --scale-down --geometry 800x600 " + filePath;
             system(command.c_str());
         } else {
-            // ## uncomment line code ini jika ingin mengaktifkan custom ukuran gambar 
-            // string command = "w3mimgdisplay -geometry " + to_string(width) + "x" + to_string(height) + " " + filePath;  untuk windows pake w3m
-            // ## default menampilkan gambar tanpa custom ukuran
-            string command = "w3mimgdisplay " + filePath; // untuk windows pake w3m 
-            system(command.c_str());
+          cout << "Unsupported OS gunakan WSL" << endl;
         }
-    #elif defined(__APPLE__) || defined(__MACH__) || defined(__linux__)
-        // ## uncomment line code ini jika ingin mengaktifkan custom ukuran gambar
-        // string command = "chafa --stretch --size " + to_string(width) + "x" + to_string(height) + " " + filePath;  untuk mac dan linux pake chafa
-        // ## default menampilkan gambar tanpa custom ukuran
-        string command = "chafa " + filePath; // untuk mac dan linux pake chafa
+    #elif defined(__APPLE__) || defined(__MACH__)
+        // Use 'open' command for MacOS (built-in image viewer)
+        string command = "open " + filePath;
+        system(command.c_str());
+    #elif defined(__linux__)
+        // Use feh for Linux
+        string command = "feh -x --scale-down --geometry 800x600 " + filePath;
         system(command.c_str());
     #else
-        cerr << "Unsupported OS" << endl; // unsupported OS diluar dari 3 OS diatas
+        cerr << "Unsupported OS" << endl;
         return;
     #endif
 }

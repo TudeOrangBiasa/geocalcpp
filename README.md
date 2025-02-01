@@ -8,15 +8,15 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 - Menghitung volume dan luas permukaan berbagai bangun ruang seperti kubus, balok, bola, dan lain-lain.
 - Tampilan menu interaktif dengan ASCII art.
 - Menggunakan modular programming untuk menjaga kode tetap rapi dan mudah dibaca.
-- Menampilkan gambar bangun datar dan bangun ruang di terminal menggunakan `chafa` (Linux dan macOS), `w3m` (Windows) atau `chafa` dengan WSL (Windows).
+- Menampilkan gambar bangun datar dan bangun ruang di terminal menggunakan `feh` (Linux), untuk (MacOS) sudah ada built in image viewer, `feh` dengan WSL (Windows).
 
 ## Minimum Requirement
 
 - CMake 3.10 atau lebih baru
 - Compiler C++ yang mendukung C++11
-- Chafa / w3m
+- feh untuk Linux dan Windows(WSL)
 - Terminal yang support ANSI colors
-- Sistem operasi Linux, macOS, atau Windows
+- Sistem operasi Linux, macOS, atau Windows(WSL)
 
 **Perhatikan! untuk memastikan bahwa sudah menginstall semua requirement**
 
@@ -24,93 +24,78 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 
 ```sh
    g++ --version
-   ```
+```
 
 2. **CMAKE** Jalankan perintah ini di terminal anda:
 
 ```sh
    cmake --version
-   ```
+```
 
-3. **Chafa/W3m** Jalankan perintah ini di terminal anda:
-
-```sh
-   chafa --version
-   ```
-
-   atau
+3. **feh** Jalankan perintah ini di terminal anda:
 
 ```sh
-   w3m --version
-   ```
+   feh --version
+```
 
-4. **Support ANSI color** Jalankan perintah ini di terminal anda, pastikan teks ini berubah    warna menjadi merah
+4. **Support ANSI color** Jalankan perintah ini di terminal anda, pastikan teks ini berubah warna menjadi merah
 
 ```sh
    printf "\e[31mThis text should be red.\e[0m\n"
-   ```
+```
 
 **Pastikan versi dan semua requirement sudah terpenuhi**
-
 
 ## Instalasi untuk support output gambar sesuai OS yang dipakai :
 
 ### Linux
 
-- **Debian/Ubuntu:** `sudo apt-get install chafa`
-- **Arch/Manjaro:** `sudo pacman -S chafa`
-- **Fedora/CentOS/RHEL:** `sudo dnf install chafa` atau `sudo yum install chafa`
-- **openSUSE:** `sudo zypper install chafa`
-- **Snap (Rekomendasi):** `sudo snap install chafa`
-- **Dari Source Code:** Lihat [https://github.com/hpjansson/chafa](https://github.com/hpjansson/chafa) untuk instruksi kompilasi.
+- **Debian/Ubuntu:** `sudo apt-get install feh`
+- **Arch/Manjaro:** `sudo pacman -S feh`
+- **Fedora:** `sudo dnf install feh`
+- **openSUSE:** `sudo zypper install feh`
 
 ### macOS
 
-- `chafa`: `brew install chafa`
+- sudah ada built-in image viewer
 
 ### Windows
 
-- **Untuk Windows memiliki 2 opsi:**
-  1. Menggunakan WSL (Windows Subsystem for Linux) dengan menginstall `chafa`. Ini adalah opsi yang lebih sederhana karena Anda dapat menggunakan Terminal bawaan Windows (RECOMMENDED).
-  2. Menggunakan `Cygwin` Terminal untuk support menjalankan program ini. Jika menggunakan `Cygwin`, pastikan menginstall `w3m` supaya support untuk output gambar di terminal.
-- `Cygwin`: Unduh dan instal dari [situs resmi](https://www.cygwin.com/)
-- `w3m`: Unduh dan instal dari [situs resmi](http://w3m.sourceforge.net/).
- **Note : Saya menyarankan menggunakan WSL dengan Menginstall `chafa` pada WSL karena lebih mudah digunakan dibanding `Cygwin`**
-
+- **Untuk Windows Gunakan WSL:**
+  Menggunakan WSL (Windows Subsystem for Linux) dengan menginstall `feh`. Ini adalah opsi yang lebih sederhana karena Anda dapat menggunakan Terminal bawaan Windows.
 
 ## Petunjuk Penginstallan Project Ini
 
 1. Clone repository ini atau download source code di repository ini, lalu jalankan perintah ini:
 
-    ```sh
-    cd geocalcpp
-    ```
+   ```sh
+   cd geocalcpp
+   ```
 
 2. Buat direktori build dan masuk ke dalamnya:
 
-    ```sh
-    mkdir build
-    cd build
-    ```
+   ```sh
+   mkdir build
+   cd build
+   ```
 
 3. Jalankan CMake untuk menghasilkan Makefile:
 
-    ```sh
-    cmake ..
-    ```
+   ```sh
+   cmake ..
+   ```
 
 4. Kompilasi program:
 
-    ```sh
-    make
-    ```
+   ```sh
+   make
+   ```
 
 5. Jalankan aplikasi:
 
-    ```sh
-    ./geocalcpp
-    ```
-
+   ```sh
+   ./geocalcpp
+   ```
 
 ## Struktur Direktori
 
@@ -126,10 +111,9 @@ GeoCalc+ adalah aplikasi kalkulator geometri yang memungkinkan pengguna untuk me
 - [README.md](http://_vscodecontentref_/10): File ini.
 - [ketentuan.txt](http://_vscodecontentref_/11): Berisi soal dan perencanaan project ini.
 
-
 ## Menampilkan Gambar
 
-Program ini menggunakan fungsi `displayImage` untuk menampilkan gambar di terminal. Fungsi ini mendeteksi sistem operasi yang digunakan dan memilih pustaka yang sesuai (`chafa` untuk Linux dan macOS, `w3m` untuk Windows atau `chafa` WSL untuk Windows).
+Program ini menggunakan fungsi `displayImage` untuk menampilkan gambar di terminal. Fungsi ini mendeteksi sistem operasi yang digunakan dan memilih pustaka yang sesuai (`feh` untuk Linux, untuk MacOS sudah built-in image viewer, `feh` untuk Windows WSL ).
 
 ## Kontribusi
 

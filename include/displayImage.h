@@ -6,6 +6,7 @@
 #include <string>
 #include <unistd.h>
 #include <limits.h>
+#include <fstream>
 
 // ##uncomment line ini jika ingin mengaktifkan gambar dengan custom ukuran
 // void displayImage(const std::string& fileName, int width, int height);

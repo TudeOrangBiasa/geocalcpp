@@ -17,10 +17,20 @@ void displaySelectedImage(const string& imageName) {
 
 
 // Menampilkan header dan gambar sesuai pilihan
-void displayHeaderAndImage(int pilihan, const char* images[], int maxPilihan){
+void displayHeaderAndImage(int pilihan, const char* images[], int maxPilihan) {
     cout << endl;
     if (pilihan >= 1 && pilihan <= maxPilihan && images[pilihan - 1] != nullptr) {
         cout << fgGreen() << bold() << "+==================================================+" << endl << endl;
+        
+        #if defined(__APPLE__) || defined(__MACH__)
+            // MacOS menggunakan 'open' dimana itu tidak memblock terminal
+            cout << fgRed() << bold() << "      Tutup preview untuk melanjutkan program      " << endl << endl;
+        #else
+            // For Linux and WSL menggunakan feh
+            cout << fgRed() << bold() << "         Tekan CTRL + C untuk menutup gambar        " << endl << endl;
+        #endif
+        
+        cout << fgBlue() << bold() << "Image yang Ditampilkan : " << images[pilihan-1] <<  endl;
         displaySelectedImage(images[pilihan - 1]);
         cout << fgGreen() << bold() << "+==================================================+" << endl;
     }
