@@ -10,28 +10,27 @@
 void inputPersegiPanjang(BangunDatar &bd);
 void inputPersegi(BangunDatar &bd);
 void inputLingkaran(BangunDatar &bd);
-void inputSegitigaSiku(BangunDatar &bd);
+void inputSegitigaSiku(BangunDatar &bd, bool hitungKeliling);
 void inputSegitigaSamaSisi(BangunDatar &bd);
-void inputSegitigaSamaKaki(BangunDatar &bd);
+void inputSegitigaSamaKaki(BangunDatar &bd, bool hitungKeliling);
 void inputSegitigaSembarang(BangunDatar &bd);
-void inputTrapesium(BangunDatar &bd);
-void inputJajarGenjang(BangunDatar &bd);
-void inputLayangLayang(BangunDatar &bd);
-void inputBelahKetupat(BangunDatar &bd);
-//input bangun datar end
+void inputTrapesium(BangunDatar &bd, bool hitungKeliling);
+void inputJajarGenjang(BangunDatar &bd, bool hitungKeliling);
+void inputLayangLayang(BangunDatar &bd, bool hitungKeliling);
+void inputBelahKetupat(BangunDatar &bd, bool hitungKeliling);
+// input bangun datar end
 
 // input untuk bangun ruang
 void inputBalok(BangunRuang &br);
 void inputKubus(BangunRuang &br);
 void inputTabung(BangunRuang &br);
 void inputBola(BangunRuang &br);
-void inputKerucut(BangunRuang &br);
+void inputKerucut(BangunRuang &br, bool hitungLuasPermukaan);
 void inputLimas(BangunRuang &br);
-void inputPrismaSegiempat(BangunRuang &br);
+void inputPrismaSegiempat(BangunRuang &br, bool hitungLuasPermukaan);
 void inputKerucutTerpancung(BangunRuang &br);
 void inputLimasSegitiga(BangunRuang &br);
-void inputPrismaSegitiga(BangunRuang &br);
+void inputPrismaSegitiga(BangunRuang &br, bool hitungLuasPermukaan);
 // input bangun ruang end
-
 
 #endif

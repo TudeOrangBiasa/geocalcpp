@@ -5,6 +5,6 @@
 #include <string>
 #include <limits>
 
-void validateInput(const std::string &prompt , double &input);
+void validateInput(const std::string &prompt, double &input);
 
 #endif

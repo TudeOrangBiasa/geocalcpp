@@ -1,4 +1,4 @@
-#include "../include/clearScreen.h"
+#include "../../include/clearScreen.h"
 
 using namespace std;
 

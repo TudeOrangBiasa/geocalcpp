@@ -1,15 +1,17 @@
 #include "../../include/resources/ImagesBangunDatar.h"
 
-const char* bangunDatarImages[] = {
-    "persegi_panjang.jpg",
-    "persegi.jpg",
-    "lingkaran.jpg",
-    "segitiga_siku.jpg",
-    "segitiga_sama_sisi.jpg",
-    "segitiga_sama_kaki.jpg",
-    "segitiga_sembarang.jpg",
-    "trapesium.jpg",
-    "jajar_genjang.jpg",
-    "layang_layang.jpg",
-    "belah_ketupat.jpg",
+// untuk nama images yang panjang gunakan - sebagai pengganti spasi
+
+const char *bangunDatarImages[] = {
+		"persegi-panjang.jpg",
+		"persegi.jpg",
+		"lingkaran.jpg",
+		"segitiga-siku.jpg",
+		"segitiga-sama-sisi.jpg",
+		"segitiga-sama-kaki.jpg",
+		"segitiga-sembarang.jpg",
+		"trapesium.jpg",
+		"jajar-genjang.jpg",
+		"layang-layang.jpg",
+		"belah-ketupat.jpg",
 };

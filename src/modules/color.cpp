@@ -1,4 +1,4 @@
-#include "../include/color.h"
+#include "../../include/color.h"
 
 using namespace std;
 

@@ -6,8 +6,7 @@
 #include "bangunRuang.h"
 #include "color.h"
 
-void outputHasilBangunDatar(BangunDatar &bd);
-void outputHasilBangunRuang(BangunRuang &br);
-
+void outputHasilBangunDatar(BangunDatar &bd, bool hitungLuas, bool hitungKeliling);
+void outputHasilBangunRuang(BangunRuang &br, bool hitungVolume, bool hitungLuasPermukaan);
 
 #endif

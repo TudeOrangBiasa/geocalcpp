@@ -1,4 +1,4 @@
-#include "../include/bangunDatar.h"
+#include "../../include/bangunDatar.h"
 
 using namespace std;
 
