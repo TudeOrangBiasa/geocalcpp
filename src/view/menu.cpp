@@ -13,7 +13,7 @@ void headerMenu() {
     cout << "" << endl;
     cout << "Kalkulator Bangun Ruang Dan Datar" << endl;
     cout << "Made By TudeOrangBiasa" << endl;
-    cout << "Visit Project On GitHub: \033[1;34mhttps://www.example.com\033[0m" << endl;
+    cout << "Visit Project On GitHub: \033[1;34mhttps://github.com/TudeOrangBiasa/geocalcpp.git\033[0m" << endl;
     cout << "" << endl;
 }
 
