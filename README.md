@@ -119,8 +119,4 @@ Program ini menggunakan fungsi `displayImage` untuk menampilkan gambar di termin
 
 Jika Anda ingin berkontribusi pada proyek ini, silakan fork repository ini dan buat pull request dengan perubahan Anda.
 
-## Lisensi
-
-Proyek ini dilisensikan di bawah MIT License.
-
 Terima kasih telah menggunakan GeoCalc+!
